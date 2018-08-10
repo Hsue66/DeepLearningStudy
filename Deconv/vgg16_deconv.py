@@ -59,7 +59,7 @@ class VGG16_Deconv(nn.Module):
 
     def forward(self, x, layer_idx, pool_switch):
         deconv_idx = self.index_mapping[layer_idx]
-        print(deconv_idx)
+        #print(deconv_idx)
 
         for i in range(deconv_idx, len(self.features)):
             #print(self.features[i])
